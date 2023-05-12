@@ -1,0 +1,558 @@
+/*This is a comment in CSS*/
+
+body{
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+h1{
+  font-size: 30px;
+}
+
+p{
+  font-size: 16px;
+}
+
+header{
+  padding:0 3%;
+}
+
+main{
+  width:100%;
+  max-width:1400px; /* means it won't be larger than 1200px on larger screens */
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 3%;
+}
+
+footer{
+  width:100%;
+  min-height:100px;
+}
+
+
+/* Flex layouts are one of the easier ways to style responsive layouts that work on all devices */
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
+
+.flex-container{
+  display: flex; /* all children will now be flex items */
+  flex-direction: row; /* other option is column */
+  flex-wrap: wrap; /* means the children will wrap to a new line */
+}
+
+.uploading{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.uploading a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/uploadingpor.jpg);  */
+  background-image: url(../assets/images/uploadingpor.png);
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.uploading a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.uploading h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+.Word{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+.Word a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/word.jpg);  */
+  background-image: url(../assets/images/word.png);
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.Word a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.Word h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+
+
+
+.Digital{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.Digital a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/hand.jpg);  */
+  background-image: url(../assets/images/hand.png);
+ 
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.Digital a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.Digital h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+
+
+
+
+.Scrape{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.Scrape a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+   /* background-image: url(../assets/images/music.jpg);  */
+   background-image: url(../assets/images/music.png);
+  
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.Scrape a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.Scrape h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+
+
+
+.Tokyo{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.Tokyo a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+     /* background-image: url(../assets/images/tokyo.jpg);  */
+     background-image: url(../assets/images/tokyo.png);
+ 
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.Tokyo a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.Tokyo h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+
+
+
+.Poetry{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+.Poetry a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/poem.jpg);  */
+  background-image: url(../assets/images/poem.png);
+ 
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.Poetry a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.Poetry h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+
+
+.Networked{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+.Networked a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/networked.jpg);  */
+  background-image: url(../assets/images/networked.jpeg);
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.Networked a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.Networked h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+
+
+
+.Pull-Push{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+.Pull-Push a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/networked.jpg);  */
+  background-image: url(../assets/images/pengame.png);
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.Pull-Push a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.Pull-Push h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+.VR{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+.VR a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/networked.jpg);  */
+  background-image: url(../assets/images/fog.png);
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.VR a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.VR h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+.See{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+.See a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/networked.jpg);  */
+  background-image: url(../assets/images/Seeing_Sensing.png);
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.See a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.See h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+
+
+.HandleMe{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+.HandleMe a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  /* background-image: url(../assets/images/networked.jpg);  */
+  background-image: url(../assets/images/cover.jpg);
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.HandleMe a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+.HandleMe h4{
+ margin:10px;
+ background-color: white;
+ padding:5px 10px;
+}
+
+
+
+
+/* Media Queries for responsive design */
+
+/* Un-comment the body background-colors to see bold debug color change between screen sizes */
+
+/* Extra large */
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: rgb(205, 247, 232);
+  } 
+
+  .flex-item{
+      flex-basis: 33.33%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
+
+/* Large */
+@media screen and (max-width: 992px) {
+  /* body {
+    background-color: rgb(255, 81, 0);
+  } */
+
+}
+
+/* Medium */
+@media screen and (max-width: 768px) {
+  /* body {
+    background-color: rgb(255, 0, 191);
+  } */
+
+  .flex-item{
+      flex-basis: 50%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
+
+/* Small */
+@media screen and (max-width: 576px) {
+  /* body {
+    background-color: blue;
+  } */
+
+  .flex-item{
+      flex-basis: 100%; /*width of the box, take up a quarter of the parent's size*/
+  }
+}
